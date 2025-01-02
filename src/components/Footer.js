@@ -1,6 +1,11 @@
 "use client";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faInstagram,
+  faLinkedinIn,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 import Image from "next/image";
 const footerItems = [
@@ -22,7 +27,7 @@ const Footer = () => {
     <div>
       <footer className="shadow-md w-full relative flex flex-col items-center justify-center">
         {/* Adding the SVG image above the footer */}
-        <div className="w-full">
+        {/* <div className="w-full">
           <Image
             src="/assets/svg/ZaggedLine_G_Y.svg"
             alt="Zagged Line"
@@ -30,14 +35,19 @@ const Footer = () => {
             height={120}
             className="object-cover w-full"
           />
-        </div>
+        </div> */}
+        <section className="my-7 flex h-80 w-full items-center justify-center bg-celeb-banner bg-no-repeat">
+          <p className="text-center text-3xl md:text-5xl font-bold text-white px-4">
+            Opening minds through OPEN SOURCE
+          </p>
+        </section>
         <div className="flex flex-col text-nosk-white w-full font-semibold text-center relative bg-nosk-green">
           <div className="px-8 md:px-10 lg:px-16">
-            <div className="flex flex-col lg:flex-row gap-2 justify-center items-center mb-4">
+            {/* <div className="flex flex-col lg:flex-row gap-2 justify-center items-center mb-4">
               <h4 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
                 Opening minds through OPEN SOURCE
               </h4>
-            </div>
+            </div> */}
 
             <h4 className="text-nosk-white font-semibold text-center mt-8">
               Links
@@ -71,8 +81,8 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="transition-transform hover:scale-110"
               >
-                <FontAwesomeIcon 
-                  icon={faFacebookF} 
+                <FontAwesomeIcon
+                  icon={faFacebookF}
                   className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-nosk-green hover:text-nosk-green"
                 />
               </a>
@@ -82,8 +92,8 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="transition-transform hover:scale-110"
               >
-                <FontAwesomeIcon 
-                  icon={faInstagram} 
+                <FontAwesomeIcon
+                  icon={faInstagram}
                   className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-nosk-green hover:text-nosk-green"
                 />
               </a>
@@ -93,8 +103,8 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="transition-transform hover:scale-110"
               >
-                <FontAwesomeIcon 
-                  icon={faLinkedinIn} 
+                <FontAwesomeIcon
+                  icon={faLinkedinIn}
                   className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-nosk-green hover:text-nosk-green"
                 />
               </a>
@@ -104,8 +114,8 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="transition-transform hover:scale-110"
               >
-                <FontAwesomeIcon 
-                  icon={faTwitter} 
+                <FontAwesomeIcon
+                  icon={faTwitter}
                   className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-nosk-green hover:text-nosk-green"
                 />
               </a>
