@@ -173,10 +173,21 @@ export default function TeamSection() {
       image: "/assets/team/dikshant.jpg",
       socials: {
         facebook: "#",
+        instagram: "#",
+        linkedin: "#",
+        twitter: "#",
+      },
+    },
+    {
+      name: "Ankit Paneru",
+      role: "Support Squad",
+      image: "/assets/team/ankit.jpg",
+      socials: {
+        facebook: "#",
         instagram:
-          "#",
+          "https://www.instagram.com/ankitpaneru5/profilecard/?igsh=emU2M2N4MXN2dmYy",
         linkedin:
-          "#",
+          "https://www.linkedin.com/in/ankit-paneru-ab1364343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         twitter: "#",
       },
     },
@@ -227,19 +238,7 @@ export default function TeamSection() {
         twitter: "#",
       },
     },
-    {
-      name: "Ankit Paneru",
-      role: "Support Squad",
-      image: "/assets/team/ankit.jpg",
-      socials: {
-        facebook: "#",
-        instagram:
-          "https://www.instagram.com/ankitpaneru5/profilecard/?igsh=emU2M2N4MXN2dmYy",
-        linkedin:
-          "https://www.linkedin.com/in/ankit-paneru-ab1364343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        twitter: "#",
-      },
-    },
+
   ];
 
   return (
@@ -251,7 +250,7 @@ export default function TeamSection() {
           {teamLeadTop.map((member, index) => (
             <div
               key={index}
-              className="bg-nosk-grey rounded-lg shadow-lg py-6 md:px-10 px-4 flex items-center justify-between gap-4 border-4 border-transparent hover:shadow-xl hover:border-nosk-green group transition-all"
+              className="bg-nosk-grey rounded-lg shadow-lg py-6 md:px-10 px-4 flex items-center justify-around gap-4 border-4 border-transparent hover:shadow-xl hover:border-nosk-green group transition-all"
             >
               <div className="relative w-28 h-28 rounded-full border-4 border-green-500 overflow-hidden transform group-hover:translate-y-[-10px] transition-transform duration-500">
                 <Image
@@ -309,7 +308,7 @@ export default function TeamSection() {
           {teamLeadBottom.map((member, index) => (
             <div
               key={index}
-              className="bg-nosk-grey rounded-lg shadow-lg py-6 md:px-10 px-4 flex items-center gap-4 border-4 border-transparent hover:shadow-xl hover:border-nosk-green group transition-all"
+              className="bg-nosk-grey w-full max-w-lg rounded-lg shadow-lg py-6 md:px-10 px-4 flex items-center justify-around gap-4 border-4 border-transparent hover:shadow-xl hover:border-nosk-green group transition-all"
             >
               <div className="relative w-28 h-28 rounded-full border-4 border-green-500 overflow-hidden transform group-hover:translate-y-[-5px] transition-transform duration-500">
                 <Image
@@ -368,7 +367,7 @@ export default function TeamSection() {
         {sectionTwoMembers.map((member, index) => (
           <div
             key={index}
-            className="bg-nosk-grey rounded-lg shadow-lg py-6 md:px-10 px-4 flex items-center justify-between gap-4  border-4 border-transparent hover:shadow-xl hover:border-nosk-green group transition-all"
+            className="bg-nosk-grey rounded-lg shadow-lg py-6 md:px-10 px-4 flex items-center justify-around gap-4  border-4 border-transparent hover:shadow-xl hover:border-nosk-green group transition-all"
           >
             <div className="relative w-24 h-24 rounded-full border-4 border-green-500 overflow-hidden transform group-hover:translate-y-[-10px] transition-transform duration-500">
               <Image
